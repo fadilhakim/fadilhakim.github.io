@@ -19,6 +19,8 @@
   position: relative;
   margin: 20px 0;
 }
+
+
 .checkbox { display: block; }
 
 .radio-button input,
@@ -64,3 +66,32 @@
 
 input[type="radio"]:checked + span .fake-radiobutton:after,
 input[type="checkbox"]:checked + span .fake-checkbox:after { display: block; }
+
+
+.lengkapi {
+  display:inline-block;text-align:right; float:right;
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .radio-button, .checkbox {
+    position: relative;
+    margin: 15px 0 !important;
+    display: block;
+  }
+
+  .badge-inverse-danger {
+    font-size:13px;
+  }
+
+  .lengkapi {
+    display:block;text-align:left; float:none;
+  }
+   
+  
+}
